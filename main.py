@@ -1,7 +1,10 @@
 from app.persistence.data_processor import DataProcessor
 from app.persistence.database import Database
+from app.utilities.data_visualizer import DataVisualizer
+
 
 def main():
+ 
     # Path to your CSV file
     csv_file = 'data/movies.csv'
 
@@ -32,9 +35,12 @@ def main():
 
     # Aggregation Queries
 
-    # 1. Top 5 rated directors
-    print("\nTop 5 Rated Directors:")
-    data_processor.create_views()
+   #Plots for the Aggregations
+    visualizer = DataVisualizer('movies')  # Replace with your database name
+    visualizer.plot_top_5_directors_most_films()
+    visualizer.plot_top_5_directors_rated()
+    visualizer.plot_director_average_runtime()
+    visualizer.plot_top_15_actors_with_movies()
 
 
 
