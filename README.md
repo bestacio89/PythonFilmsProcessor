@@ -33,7 +33,7 @@ Clonez le repository :
 
 ```bash
 Copy code
-git clone <url-du-repository>
+git clone [<url-du-repository>](https://github.com/bestacio89/PythonFilmsProcessor)
 cd <nom-du-repository>
 ```
 Installez les dépendances :
