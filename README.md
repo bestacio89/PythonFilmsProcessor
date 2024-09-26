@@ -17,8 +17,8 @@ app/
 │   ├── database.py        # Gestion de la connexion à la base de données
 │   └── ...                # Autres fichiers de persistance
 ├── schemas/
-│   ├── film_schema.py     # Schémas Pydantic pour les films
-│   └── director_schema.py  # Schémas Pydantic pour les réalisateurs
+│   ├── film_schema.py     # Schémas Mongoengine pour les films
+│   └── director_schema.py  # Schémas mongoengine pour les réalisateurs
 ├── ...
 ```
 Traitement Automatique des Vues
